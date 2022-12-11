@@ -7,4 +7,5 @@ There is already a simulator that runs on 3 threads, and each thread represents 
 To run the project, we can use CMake. After downloading the source code and navigating to the "src" folder on the command prompt, we can use the following commands to create the executable.
 
 cmake -S. -Bbuild
+
 cmake --build build
