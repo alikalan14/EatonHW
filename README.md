@@ -1,6 +1,6 @@
 # EatonHW
 
-This solution simulates multiple devices sending data to one machine. Devices are run in different threads, and the machine reads the messages and counts them in a thread-safe way using standard C++ library features.
+This solution simulates multiple devices sending data to one machine. Devices are run in different threads, and the machine reads the messages, counts them and print them out to the standard output in a thread-safe way using standard C++ library features.
 
 There is already a simulator that runs on 3 threads, and each thread represents a device and sends data to the machine between 0 and 5 seconds frequency. The random number generator generates the frequency.
 
