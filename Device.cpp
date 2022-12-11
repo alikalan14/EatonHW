@@ -29,7 +29,7 @@ DeviceBase::~DeviceBase() = default;
 
 void DeviceBase::connect(std::weak_ptr<ObserverBase> observer)
 {
-	observers_.push_back(observer);
+	observers_.push_back(std::move(observer));
 }
 
 void DeviceBase::disconnect(std::weak_ptr<ObserverBase> observer)
