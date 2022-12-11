@@ -26,9 +26,9 @@ int main()
 {
 	using namespace std::chrono_literals;
 
-	auto cp1{ std::make_unique<DeviceType1>("Cell phone 1", std::make_unique<MeasurementType1>(14)) };
-	auto cp2{ std::make_unique<DeviceType1>("Cell phone 2", std::make_unique<MeasurementType1>(34)) };
-	auto freezer{ std::make_unique<DeviceType2>("Freezer", std::make_unique<MeasurementType2>(220)) };
+	const auto cp1{ std::make_unique<DeviceType1>("Cell phone 1", std::make_unique<MeasurementType1>(14)) };
+	const auto cp2{ std::make_unique<DeviceType1>("Cell phone 2", std::make_unique<MeasurementType1>(34)) };
+	const auto freezer{ std::make_unique<DeviceType2>("Freezer", std::make_unique<MeasurementType2>(220)) };
 
 	auto messageReader{ std::make_shared<ObserverMain>() };
 
